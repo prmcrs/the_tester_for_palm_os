@@ -78,9 +78,8 @@ static void handleKey(WChar chr)
     case 'y': case 'Y': TesterFetch("/", "HTTP CONNECTION"); break;
     case 'c': case 'C': clearLog(); break;
     case '?':
-        FrmCustomAlert(1000,
-            "H/V/M: Health/Server/Services. R: DNS and TCP. T/Y: HTTP. C: Clear.",
-            "", "");
+        TesterLog("H/V/M health; R DNS/TCP");
+        TesterLog("T/Y HTTP; C clear");
         break;
     default: break;
     }
